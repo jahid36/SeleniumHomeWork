@@ -13,11 +13,11 @@ public class Safari {
 
     public static void safari () {
 
-        System.setProperty("webdriver.safari.driver","/Users/jahidkhan/JahidProjects/drivers/safari");
+        //System.setProperty("webdriver.safari.driver","/Users/jahidkhan/JahidProjects/drivers/safari");
         WebDriver driver = new SafariDriver();
         driver.navigate().to("https://www.nytimes.com");
-        String pagetilte = driver.getTitle();
-        System.out.println(pagetilte);
+        String pagetitle = driver.getTitle();
+        System.out.println(pagetitle);
         driver.quit();
 
 
